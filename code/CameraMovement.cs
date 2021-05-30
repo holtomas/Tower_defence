@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraMovement : MonoBehaviour
 {
@@ -15,7 +16,7 @@ public class CameraMovement : MonoBehaviour
     Vector3 smothingVecotr3;
     Vector3 positionNow; 
     Vector3 maxCoordinate;
-
+    bool x = false;
     private float ReverseMouseWheel = -1; //smer mousewheel pri zoomu
     public float smoothTime = 0.1F;
     public float smoothTimeDrag = 0.5F;
@@ -41,6 +42,17 @@ public class CameraMovement : MonoBehaviour
     {
 
 
+       
+        /*
+            Debug.Log(SceneManager.GetActiveScene().buildIndex);
+            if (SceneManager.GetActiveScene().buildIndex == 1)
+            {
+                Debug.Log("ahoj");
+                    FindObjectOfType<AudioManager>().PlaySound("InGameMusic");
+                x = false;
+            }
+        
+        */
 
         DragMouse();
         //  string ahoj = "Horizontal";
@@ -59,7 +71,7 @@ public class CameraMovement : MonoBehaviour
 
             float ZoomValue = Input.GetAxis("Mouse ScrollWheel");
             //   Debug.Log("transform.position" + transform.position.y);
-            Debug.Log(transform.position.y);
+         //   Debug.Log(transform.position.y);
 
             /*
                     if (transform.position.y <= CameraHeight)      
@@ -95,7 +107,7 @@ public class CameraMovement : MonoBehaviour
             float dist = smothingVecotr.y * CameraSpeed;
             // float dist = maxCoordinate.y + transform.position.y;  
             // Debug.Log("maxCoordinate.y" + maxCoordinate.y);  
-            Debug.Log("final lenght" + ax + dist);
+          //  Debug.Log("final lenght" + ax + dist);
             if (ax + dist <= MinZoomDistance || ax + dist > MaxZoomDistance) { }
             if (bx + dist <= MinXdistance || bx + dist > MaxXdistance) { }
             if (cx + dist <= MinZdistance || cx + dist > MaxZdistance) { }
