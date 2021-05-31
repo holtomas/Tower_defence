@@ -1,6 +1,6 @@
 # Tower_defence
 - strategická počítačová hra pro jednoho hráče
-- hráč ovládá jednotky, staví budovy, teží suroviny a utočí na nepřátelské jednotky
+- hráč má omezený počet životů a jeho ůkoem je zbránit nepřátelským jednotkám dojít z bodu A do bodu B pomocí stavění věží na předem nastavená staveniště
 # informace o projektu
 - skupinový školní projekt
 - vytvořeno v herním enginu Unity a visual studiu
