@@ -8,6 +8,6 @@
 - na modely byl použit blender 
 - animace vytvořeny v aplikaci mixamo
 # spuštění hry
-- hru lze spustit pres exe file ve složce PlayGame
+- hru lze spustit pres exe file v zipu Game_Tower_Defense_Win.7z 
 # Podrobnější informace v Dokumentace.pdf
 
